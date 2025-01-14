@@ -3,7 +3,12 @@
   --to-background-grey: #f0f0f0;
   --to-lightgrey: #c7cdd1;
   --to-primary-blue: #47adf1;
+  --to-primary-violet: #9c72e4;
+  --to-primary-pink: #d863a0;
+  --to-primary-red: #eb5952;
+  --to-ptimary-orange: #f29e33;
   --to-primary-green: #6dc4af;
+  --to-lightgreen: #b0c926;
 }
 
 * {
@@ -36,14 +41,14 @@ body {
 /*Start main*/
 .background {
   width: 100%;
-  height: 635px;
+  height: 800px;
   background-color: var(--to-background-grey);
   padding: 40px 168px 0 168px;
 }
 
 .container {
   width: 100%;
-  height: 580px;
+  height: 700px;
   background-color: white;
 }
 
@@ -93,16 +98,59 @@ hr {
   color: var(--to-text-primary);
 }
 
+.items {
+  padding-top: 24px;
+}
+
 .icon {
-  font-size: 8px;
-  height: 14px;
-  width: 14px;
-  border: 1px solid;
+  font-size: 10px;
+  font-weight:bolder;
+  border: 2px solid;
   border-radius: 50%;
-  margin-top: 8px;
+  padding: 4px 6px ;
 }
 
 .icon.check {
   color: var(--to-primary-green);
+}
+
+.icon.croce {
+  color: var(--to-primary-red);
+}
+
+.text {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.chips {
+  font-size: 14px;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 16px;
+}
+
+.chips.blue {
+  background-color: var(--to-primary-blue);
+}
+
+.chips.violet {
+  background-color: var(--to-primary-violet);
+}
+
+.chips.green {
+  background-color: var(--to-primary-green);
+}
+
+.chips.orange {
+  background-color: var(--to-ptimary-orange);
+}
+
+.chips.pink {
+  background-color: var(--to-primary-pink);
+}
+
+.chips.lightgreen {
+  background-color: var(--to-lightgreen);
 }
 /*End main*/
