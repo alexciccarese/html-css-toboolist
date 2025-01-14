@@ -1,3 +1,8 @@
+:root {
+  --to-background-grey: #E8E9EA;
+  --to-lightgrey: #c7cdd1;
+  --to-primary-blue: #47adf1;
+}
 
 * {
   margin: 0;
@@ -5,10 +10,11 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    width: 1123px;
+  font-family: "Roboto", sans-serif;
+  width: 1123px;
 }
 
+/*Start header*/
 .site_header {
   width: 100%;
   height: 70px;
@@ -30,3 +36,55 @@ body {
   padding-left: 5px;
 }
 
+/*End header*/
+
+
+/*Start main*/
+.background {
+  width: 100%;
+  height: 635px;
+  background-color: var(--to-background-grey);
+  padding: 40px 168px 0 168px;
+}
+
+.container_actions {
+  width: 100%;
+  height: 580px;
+  background-color: white;
+}
+
+.actions {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-top: 8px;
+}
+
+.add {
+  width: auto;
+  height: 26px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 4px;
+  border-radius: 4px;
+}
+
+.add.task{
+  color: white;
+  background-color: var(--to-primary-blue);
+  border: 0;
+}
+
+.add.selection {
+  color: var(--to-lightgrey);
+  background-color: white;
+  border-color: var(--to-lightgrey);
+  border-style:solid;
+}
+
+hr {
+  border: 1px solid var(--to-background-grey);
+}
+/*End main*/
