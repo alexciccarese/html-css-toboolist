@@ -1,7 +1,9 @@
 :root {
-  --to-background-grey: #E8E9EA;
+  --to-text-primary :#444851;
+  --to-background-grey: #f0f0f0;
   --to-lightgrey: #c7cdd1;
   --to-primary-blue: #47adf1;
+  --to-primary-green: #6dc4af;
 }
 
 * {
@@ -11,7 +13,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  width: 1123px;
 }
 
 /*Start header*/
@@ -29,13 +30,6 @@ body {
   align-items: center;
 }
 
-.name_logo {
-  background-size: 70px;
-  font-size: 40px;
-  font-weight: 900;
-  padding-left: 5px;
-}
-
 /*End header*/
 
 
@@ -47,7 +41,7 @@ body {
   padding: 40px 168px 0 168px;
 }
 
-.container_actions {
+.container {
   width: 100%;
   height: 580px;
   background-color: white;
@@ -86,5 +80,29 @@ body {
 
 hr {
   border: 1px solid var(--to-background-grey);
+}
+
+.container_tasks {
+  padding-left: 50px;
+}
+
+.task_name {
+  padding-top: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--to-text-primary);
+}
+
+.icon {
+  font-size: 8px;
+  height: 14px;
+  width: 14px;
+  border: 1px solid;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+
+.icon.check {
+  color: var(--to-primary-green);
 }
 /*End main*/
